@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlitzNet</title>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="
+    981923150238-i71lds8e1lm59hdeq6o42u9sfgje04m9.apps.googleusercontent.com">
+  </head>
+  <body>
+      <nav class="navbar">
+        <a href="/home.html"><h1 class="logo">BlitzNet</h1></a>
+        <div class="search-space">
+        <form class="search-outer-box" action="">
+          <div class="search">
+            <input class="search-input" type="search" placeholder="Search..." />
+            <a href="https://youtube.com"><svg
+              class="search-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                stroke="#F8F9FB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 21L16.7 16.7"
+                stroke="#F8F9FB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg></a>
+          </div>
+        </form>
+      </div>
+        <div class="icon-box">
+          <div class="cart">
+          <a href="/my-orders.html"><img class="cart-icon" src="/Cart 5.svg" alt="" /></a>
+          <span id="cart-count">0</span></div>
+          <a href=""><img class="sign-in" src="/Vector.svg" alt="" /></a>
+        </div>
+      </nav>
+
+    <section class="hero">
+      <img class="ellipse" src="Ellipse 7.svg" alt="" />
+      <div class="hero-flex-container">
+        <img class="wifi-symbol" src="/pngegg (12) 1.svg" alt="" />
+        <div class="hero-text">
+          <h2 class="hero-h2">High-Speed Data and Internet</h2>
+          <p class="hero-p">
+            Get speeds up to 100-300 mbps (4 to 12 times faster than the average
+            internet speed) at prices starting with a $100.00 one time payment +
+            $30/month. Cancel anytime.
+          </p>
+          <div class="hero-button-container">
+            <a href="https://youtube.com"><button class="hero-button black">Shop Now</button></a>
+            <a href="https://youtube.com"><button class="hero-button grey">How it Works</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="satellite-box">
+      <img class="satellite" src="/pngegg 1.svg" alt="" />
+    </div>
+    <section class="sub-hero">
+      <div class="learn-rec">
+        <div class="learn-text">
+          <h3 class="learn-h3">Speeds up to 300 mbps and no dead zones.</h3>
+          <p class="learn-p">The power of BlitzNet service from outer space.</p>
+        </div>
+        <a href="https://youtube.com"><button class="learn-more">Learn More</button></a>
+      </div>
+    </section>
+    <section class="product-section">
+      <h2 class="product-title">Products</h2>
+      <div class="shop">
+        <div id="card-1" class="card-1">
+        <div class="product-card">
+          <img src="/Layer 1.svg" alt="" class="product-img">
+          <h3 class="card-title">Modem</h3>
+          <h1 class="card-price">$100.00</h1>
+          <h3 class="card-sub-title">$30/month <span class="span-1">subscription</span></h3>
+          <div class="product-benefits">
+          <li>$100.00 one time payment for modem</li>
+          <li>100-300mbps (depends on your area)</li>
+          <li>Tri-Band Wi-Fi</li>
+          <li>Wi-Fi 6E</li>
+          <li>Self Setup</li>
+          <li>MU-MIMO Technology</li>
+          <li>Zero Latency</li>
+          <li>350 feet 6E signal range</li>
+          </div>
+          <button class="add-to-cart" data-product-id="1">Add to Cart</button>
+        </div>
+        </div>
+        <div class="card-2" id="card-2">
+          <div class="product-card">
+          <img src="/image 1.svg" alt="" class="product-img">
+          <h3 class="card-title">Phone Service</h3>
+          <h1 class="card-price">$30/month <span class="span-2">subscription</span></h1>
+          <div class="product-benefits">
+          <li>200-300mbps (depends on your area)</li>
+          <li>Unlimited 5G Data  throughout the world</li>
+          <li>Affordable family plans</li>
+          <li>No hidden fees. Cancel anytime</li>
+          <li>4K Video Streaming</li>
+          <li>Zero Latency</li>
+          <li>Global Roaming</li>
+          </div>
+          <button class="add-to-cart" data-product-id="2">Add to Cart</button>
+        </div>
+      </div>
+        <div class="card-3" id="card-3">
+          <div class="product-card-bundle">
+          <div class="img-box">
+          <img src="/Layer 1.svg" alt="" class="product-img">
+          <img src="/image 1.svg" alt="" class="product-img">
+          </div>
+          <h3 class="card-title">Modem + Phone Service</h3>
+          <h1 class="card-price">$90.00</h1>
+          <h3 class="card-sub-title">$50/month <span class="span-3">subscription</span></h3>
+          <div class="bundle-benefits-box">
+          <div class="bundle-benefits-modem">
+            <h3 class="card-title">Modem</h3>
+            <div class="bundle-list-box">
+            <li>$100.00 one time payment for modem</li>
+            <li>100-300mbps (depends on your area)</li>
+            <li>Tri-Band Wi-Fi</li>
+            <li>Wi-Fi 6E</li>
+            <li>Self Setup</li>
+            <li>MU-MIMO Technology</li>
+            <li>Zero Latency</li>
+            <li>350 feet 6E signal range</li>
+          </div>
+          </div>
+          <div class="bundle-benefits-phone-service">
+            <h3 class="card-title">Phone Service</h3>
+            <div class="bundle-list-box">
+            <li>200-300mbps (depends on your area)</li>
+            <li>Unlimited 5G Data  throughout the world</li>
+            <li>Affordable family plans</li>
+            <li>No hidden fees. Cancel anytime</li>
+            <li>4K Video Streaming</li>
+            <li>Zero Latency</li>
+            <li>Global Roaming</li>
+          </div>
+        </div>
+      </div>
+          <button id="bundle-button">Bundle Now</button>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer-reviews">
+      <h2 class="customer-reviews-title">Customer Reviews:</h2>
+      <div class="video-container">
+        <input id="ch" type="checkbox">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gf8mCl1ycBQ?si=jTqODYtFxiVgCdCx" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gf8mCl1ycBQ?si=jTqODYtFxiVgCdCx" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gf8mCl1ycBQ?si=jTqODYtFxiVgCdCx" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gf8mCl1ycBQ?si=jTqODYtFxiVgCdCx" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+       
+        
+
+          <div class="see-more-videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gf8mCl1ycBQ?si=jTqODYtFxiVgCdCx" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+            picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gf8mCl1ycBQ?si=jTqODYtFxiVgCdCx" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+            picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gf8mCl1ycBQ?si=jTqODYtFxiVgCdCx" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+            picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gf8mCl1ycBQ?si=jTqODYtFxiVgCdCx" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+            picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+          </div>
+          <div class="see-more-button-box">
+          <label for="ch" class="see-more-button">See More</label>
+        </div>
+      </div>
+
+    </section>
+    <section class="frequently-asked-questions">
+      <h2 class="frequently-asked-questions-title">Frequently Asked Questions:</h2>
+      <div class="question-container">
+        <input id="ch2" type="checkbox">
+        <div class="qna">
+        <h3 class="question">What is considered high-speed internet?</h3>
+        <p class="answer">Speeds of 100 mbps and faster are the gold standard for good internet speed, especially for multi-device households.</p>
+      </div>
+        <div class="qna">
+        <h3 class="question">Can I keep my number when switching to BlitzNet?</h3>
+        <p class="answer">Yes, just provide your current number during the sign-up process and we will take care of the rest.</p>
+      </div>
+        <div class="qna">
+        <h3 class="question">What are the options for family plans or adding lines?</h3>
+        <p class="answer">Here’s a breakdown:</p>
+        <li class="list-answer">First line: $30/month</li>
+        <li class="list-answer">Additional lines each: $20/month</li>
+      </div>
+      <div class="see-more-questions">
+        <div class="qna">
+          <h3 class="question">What happens if I move?</h3>
+          <p class="answer">BlitzNet serves the whole world. Even if you move to a different country, that does not affect your data or internet plan.</p>
+        </div>
+          <div class="qna">
+          <h3 class="question">Are there any hidden fees?</h3>
+          <p class="answer">No, we are transparent about all our fees. We will keep you up-to-date if you are about to see any changes for tax or regulatory fees</p>
+        </div>
+          <div class="qna">
+          <h3 class="question">What should I do if my internet or data goes down?</h3>
+          <p class="answer">With our state-of-the-art chips and satellites you will never experience our service going down.</p>
+        </div>
+      </div>
+      <div class="see-more-button-box-2">
+        <label for="ch2" class="see-more-button-2">See More</button>
+      </div>
+      </div>
+
+    </section>
+    <div class="login-popup" id="loginPopup">
+      <div class="login-box">
+          <div class="login-header">
+              <header>Welcome</header>
+              <p>We are happy to have you back!</p>
+              <button class="close-popup" onclick="closePopup()">×</button>
+          </div>
+          <div class="input-box">
+              <input type="text" class="input-field" id="email" autocomplete="off" required>
+              <label for="email">Email or phone</label>
+          </div>
+          <div class="input-box">
+              <input type="password" class="input-field" id="password" autocomplete="off" required>
+              <label for="password">Password</label>
+          </div>
+          <div class="forgot">
+              <section>
+                  <input type="checkbox" id="check">
+                  <label for="check">Remember me</label>
+              </section>
+              <section>
+                  <a href="#" class="forgot-link">Forgot password?</a>
+              </section>
+          </div>
+          <div class="input-box">
+              <input type="submit" class="input-submit" value="Sign In">
+          </div>
+          <div class="middle-text">
+              <hr>
+              <p class="or-text">Or</p>
+          </div>
+          <div class="social-sign-in">
+              <button class="input-google" id="googleSignIn">
+                  <img src="images/google.png" alt="">
+                  <p>Sign In with Google</p>
+              </button>
+              <button class="input-twitter">
+                  <img src="images/twitter.png" alt="">
+              </button>
+          </div>
+          <div class="sign-up">
+              <p>Don't have account <a href="#">Sign up</a></p>
+          </div>
+      </div>
+  </div>
+    <section class="footer">
+    <div class="footer-1">
+      <div class="f-product">
+        <h3 class="f-sm-title">Product</h3>
+        <a href="/my-orders.html"><p class="f-p">My Orders</p></a>
+        <a href="https://youtube.com"><p class="f-p">New Deals</p></a>
+          <a href="https://youtube.com"><p class="f-p">Virtual Events</p></a>
+            <a href="https://youtube.com"><p class="f-p">Setup Guide</p></a>
+              <a href="https://youtube.com"><p class="f-p">Product Safety</p></a>
+                <a href="https://youtube.com"><p class="f-p">Your Returns</p></a>
+      </div>
+      <div class="f-explore">
+        <h3 class="f-sm-title">Explore</h3>
+        <a href="https://youtube.com"><p class="f-p">Resources</p></a>
+        <a href="https://youtube.com"><p class="f-p">Blog</p></a>
+          <a href="https://youtube.com"><p class="f-p">Documents</p></a>
+      </div>
+      <div class="f-company">
+        <h3 class="f-sm-title">Company</h3>
+        <a href="https://youtube.com"><p class="f-p">About Us</p></a>
+          <a href="https://youtube.com"><p class="f-p">Partners</p></a>
+            <a href="https://youtube.com"><p class="f-p">Customer Service</p></a>
+            <a href="https://youtube.com"><p class="f-p">Contact Us</p></a>
+      </div>
+      <div class="f-subscribe">
+        <h4 class="f-sub-title">Subscribe</h4>
+        <form action="">
+          <div class="email-address">
+            <input class="email-input" type="email" placeholder="Email address" />
+            <a href="https://youtube.com"><img class="send" src="/nnew-send.svg" alt=""></a>
+          </div>
+        </form>
+        <p class="subscribe-paragraph">Hello, we are ABC. trying to make an effort to put the right people for you to get the best results. Just insight</p>
+      </div>
+    </div>
+    <span class="mid-footer-dash"></span>
+    <div class="footer-2">
+      <a href="https://youtube.com"><h1 class="f-logo">BlitzNet</h1></a>
+      <div class="tpc">
+        <a href="https://youtube.com"><p class="tpc-text">Terms</p></a>
+        <a href="https://youtube.com"><p class="tpc-text">Privacy</p></a>
+        <a href="https://youtube.com"><p class="tpc-text">Cookies</p></a>
+      </div>
+      <div class="socials">
+        <a href="https://youtube.com"><img class="social-icons" src="/Linkedin.svg"  alt=""></a>
+          <a href="https://youtube.com"><img class="social-icons" src="/Facebook.svg" alt=""></a>
+            <a href="https://youtube.com"><img class="social-icons" src="/YouTube.svg" alt=""></a>
+      </div>
+    </div>
+  </section>
+  <script src="app.js"></script>
+  </body>
+</html>
